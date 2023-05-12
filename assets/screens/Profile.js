@@ -39,14 +39,14 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
@@ -56,14 +56,14 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
@@ -73,14 +73,14 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
@@ -90,9 +90,8 @@ const Home = ({proapsChat}) => {
             </View>
         </ScrollView>
     )
-    bmnmvbmvbm
-    vbmvbmmn
-    
+
+
 }
 
 export default Home;

@@ -65,4 +65,15 @@ export default style = StyleSheet.create({
         borderBottomWidth: 5,
         borderColor: '#FFF',
     },
+
+    textFollow: {
+
+        textAlign:'center', 
+        fontSize: 20, 
+
+        marginBottom: 'auto',
+        marginTop: 'auto',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+    },
 })
