@@ -76,4 +76,34 @@ export default style = StyleSheet.create({
         marginLeft: 'auto',
         marginRight: 'auto',
     },
+
+    contentProfile: {
+        height: 'auto',
+        width: '100%',
+        flex: 1,
+    },
+
+    menuProfile: {
+        height: 60,
+        width: '100%',
+        backgroundColor: '#FFF',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    
+    squareProfile: {
+        width: '33%',
+    },
+
+    textMenuProfile: {
+        color: '#000',
+        fontSize: 16,
+        textTransform: 'uppercase',
+
+        marginBottom: 'auto',
+        marginTop: 'auto',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+    }
 })

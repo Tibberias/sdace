@@ -94,7 +94,8 @@ export default style = StyleSheet.create({
     },
 
     content: {
-        height:1000,
+        minHeight:1000,
+        height: 'auto',
         width: '100%',
         display: 'flex',
     },

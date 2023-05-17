@@ -60,13 +60,14 @@ const Home = ({proapsChat}) => {
                     <LinearGradient
                     style={homeStyle.campanhaDegrade}
                     colors={['#2d2d2d00', '#009']}/>
-                    <View
-                    style={[homeStyle.titleCampanha, {backgroundColor: '#009'}]}>
+                    <TouchableOpacity
+                    style={[homeStyle.titleCampanha, {backgroundColor: '#009'}]}
+                    onPress={proapsChat}>
                     <Text
                     style={[style.fontText, {fontSize: 18}]}>
                     A INVASÃO DOS ROBOS
                     </Text>
-                    </View>
+                    </TouchableOpacity>
                   </View>
 
                   <View
@@ -79,13 +80,14 @@ const Home = ({proapsChat}) => {
                     <LinearGradient
                     style={homeStyle.campanhaDegrade}
                     colors={['#2d2d2d00', '#090']}/>
-                    <View
-                    style={[homeStyle.titleCampanha, {backgroundColor: '#090'}]}>
+                    <TouchableOpacity
+                    style={[homeStyle.titleCampanha, {backgroundColor: '#090'}]}
+                    onPress={proapsChat}>
                     <Text
                     style={[style.fontText, {fontSize: 18}]}>
                     IRMÃOS SILVA
                     </Text>
-                    </View>
+                    </TouchableOpacity>
                   </View>
 
             </View>
