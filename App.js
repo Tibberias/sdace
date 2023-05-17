@@ -52,7 +52,7 @@ function App() {
     <View
     style={style.background}>
       { homeScreen && 
-        <Home proapsChat={startChat} proapsHome={startHome}/>
+        <Home proapsChat={startChat}/>
       }
       { chatScreen && 
         <Chat/>
@@ -66,7 +66,7 @@ function App() {
       
       <View>
       </View>
-        <MainDrawer proapsProfile={startProfile}></MainDrawer>
+        <MainDrawer proapsProfile={startProfile} proapsHome={startHome}></MainDrawer>
     </View>
   )
 };

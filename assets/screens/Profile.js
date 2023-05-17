@@ -1,7 +1,9 @@
 import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import style  from '../style/basic'
+import homeStyle  from '../style/home'
 import profileStyle  from '../style/profile'
 import LinearGradient from 'react-native-linear-gradient';
+import profile from '../style/profile';
 
 const Home = ({proapsChat}) => {
     return(
@@ -39,15 +41,15 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
-                                199
+                            style={[style.fontText, profileStyle.textFollow, {fontSize: 16}]}>
+                                AMIGOS
                             </Text>
                         </View>
                     </View>
@@ -56,15 +58,15 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
-                                199
+                            style={[style.fontText, profileStyle.textFollow, {fontSize: 16}]}>
+                                FICHAS
                             </Text>
                         </View>
                     </View>
@@ -73,24 +75,95 @@ const Home = ({proapsChat}) => {
                         <View
                         style={profileStyle.contentFolow}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
+                            style={[style.fontText, profileStyle.textFollow]}>
                                 199
                             </Text>
                         </View>
                         <View
                         style={[profileStyle.contentFolow, {borderBottomWidth:0}]}>
                             <Text
-                            style={[style.fontText, {textAlign:'center', fontSize: 20, height: '100%', backgroundColor: '#000'}]}>
-                                199
+                            style={[style.fontText, profileStyle.textFollow, {fontSize: 16}]}>
+                                CAMPANHAS
                             </Text>
                         </View>
                     </View>
 
                 </View>
+                <View
+                style={profileStyle.contentProfile}>
+                    <View
+                    style={profileStyle.menuProfile}>
+                        <TouchableOpacity
+                        style={profileStyle.squareProfile}>
+
+                            <Text
+                            style={profileStyle.textMenuProfile}>Publicações</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                        style={profileStyle.squareProfile}>
+
+                            <Text
+                            style={profileStyle.textMenuProfile}>Campanhas</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                        style={profileStyle.squareProfile}>
+
+                            <Text
+                            style={[style.fontText, profileStyle.textMenuProfile]}>Mural</Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View>
+                        <View
+                        style={homeStyle.boxCapanhas}>
+                            <View
+                            style={homeStyle.campanha}>
+                            
+                                <Image
+                                style={style.images}
+                                source={require('../images/usuarios/campanhas/brabo.jpg')}>
+                                </Image>
+                                <LinearGradient
+                                style={homeStyle.campanhaDegrade}
+                                colors={['#2d2d2d00', '#900']}/>
+                                <TouchableOpacity
+                                style={[homeStyle.titleCampanha, {backgroundColor: '#900'}]}
+                                onPress={proapsChat}>
+                                <Text
+                                style={[style.fontText, {fontSize: 18}]}>
+                                A FUGA DOS ORCS
+                                </Text>
+                                </TouchableOpacity>
+                            </View>
+
+                            
+                            <View
+                            style={homeStyle.campanha}>
+                            
+                                <Image
+                                style={style.images}
+                                source={require('../images/usuarios/campanhas/velho.png')}>
+                                </Image>
+                                <LinearGradient
+                                style={homeStyle.campanhaDegrade}
+                                colors={['#2d2d2d00', '#090']}/>
+                                <TouchableOpacity
+                                style={[homeStyle.titleCampanha, {backgroundColor: '#090'}]}
+                                onPress={proapsChat}>
+                                <Text
+                                style={[style.fontText, {fontSize: 18}]}>
+                                IRMÃOS SILVA
+                                </Text>
+                                </TouchableOpacity>
+                            </View>
+                            </View>
+                        </View>
+                </View>
             </View>
         </ScrollView>
     )
-    
+
+
 }
 
 export default Home;
